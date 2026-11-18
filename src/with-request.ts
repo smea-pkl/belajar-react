@@ -1,8 +1,8 @@
 import type { Result } from "./app-context"
 
-export async function withRequest(
-    fetchFn: () => Promise<any>,
-    setterFunction: (state: Result<any>) => void,
+export async function withRequest<T>(
+    fetchFn: () => Promise<T>,
+    setterFunction: (state: Result<T>) => void,
 ) {
     try {
         setterFunction({ type: "pending" })

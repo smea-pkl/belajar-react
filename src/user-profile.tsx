@@ -14,7 +14,7 @@ export default function UserProfile() {
 
     if (userData.type === "error") {
         return (
-            <div className="rounded-md border border-rose-300 bg-rose-50 px-3 py-1.5 text-rose-500">
+            <div className="rounded-md border border-rose-300 bg-rose-50 px-3 py-1.5 text-xs text-rose-500">
                 Error: {userData.message}!
             </div>
         )
