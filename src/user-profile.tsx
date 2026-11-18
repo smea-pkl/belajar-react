@@ -5,7 +5,7 @@ export default function UserProfile() {
     const userData = appContext.state.userData
 
     if (userData.type === "idle") {
-        return "idle"
+        return
     }
 
     if (userData.type === "pending") {
